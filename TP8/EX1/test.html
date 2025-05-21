@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice PHP</title>
+</head>
+<body>
+    <h2>Calculatrice simple</h2>
+
+    <form method="post" action="test.php">
+        <label>Nombre 1 :</label>
+        <input type="number" name="nombre1"  required><br><br>
+
+        <label>Nombre 2 :</label>
+        <input type="number" name="nombre2"  required><br><br>
+
+        <label>Opération :</label>
+        <select name="operation" required>
+            <option value="addition">+</option>
+            <option value="soustraction">-</option>
+            <option value="multiplication">×</option>
+            <option value="division">÷</option>
+        </select><br><br>
+        <input type="submit" value="Calculer">
+    </form>
+
+    
+</body>
+</html>

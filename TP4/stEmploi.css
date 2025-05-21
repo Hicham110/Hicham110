@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    font-size: small;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    width:  80%;
+}
+th, td {
+    border: 1px solid #333;
+}
+.timeColor{
+    background-color: rgb(144, 174, 228);
+}
+.jour{
+    writing-mode: vertical-lr;
+    background-color:lightblue ;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 12%;
+
+}
+.DarckZone{
+    background-color: black;
+}
+#Zone{
+    background-color: black;
+}
+.bigZone{
+    background-color: black;
+    width: 15%;
+}
+#tab1{
+    margin-top: -2px;
+}
+a:hover {
+    color: red;
+    text-transform: uppercase;
+  }
+
+

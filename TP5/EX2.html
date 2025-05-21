@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeu de devinette</title>
+</head>
+<body>
+
+  <h1>Jeu : Devinez le nombre entre 1 et 10</h1>
+  <button onclick="Guess()">Commencer le jeu</button>
+
+  <script>
+    function Guess() {
+      const S = Math.floor(Math.random() * 10) + 1;
+      let A;
+      let CONTEUR = 0;
+
+      do {
+        A = parseInt(prompt("Entrez un nombre entre 1 et 10 :"));
+        CONTEUR++;
+
+        if (A < S) {
+          alert("Trop petit !");
+        } else if (A> S) {
+          alert("Trop grand !");
+        } else if (A === S) {
+          alert("Bravo ! Vous avez trouvé le nombre en " + CONTEUR + " tentative(s) 🎉");
+        } else {
+          alert("Entrée invalide !");
+        }
+
+      } while (A !== S);
+    }
+  </script>
+
+</body>
+</html>

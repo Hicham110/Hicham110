@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>TP Formulaire avec du php</h1>
+    <form method="POST" action="reponse.php">
+        <br>
+        <select>
+            <option>Mlle</option>
+            <option selected>Mme</option>
+        </select>
+        <br>
+    <label for="prenom">Prenom</label>
+    <input type="text" name="prenom" id="prenom" placeholder="Saisir votre prenom..." required>
+    <br>
+
+     <label for="nom">Nom</label>
+    <input type="text" name="nom" id="nom" placeholder="Saisir votre nom..." required>
+    <br>
+
+     <label for="sexe">Sexe:</label>
+     <br>
+    <label for="sexe">Masclin</label>
+    <input type="radio" name="sexe" id="sexe" value="H" checked>
+
+   <strong>Fiminin</strong> 
+    <input type="radio" name="sexe"   value="F" >
+    <br>
+    <label for="date_naiss" >Date de naissance</label>
+    <input type="date" name="date_naiss" id="date" name="date_naiss" required  >
+    <br>
+    <label for="identifiant">Donner identifiant*</label>
+    <input type="text"  name="identifiant"  id="iden"  placeholder="ID" required>
+    <br>
+    <label for="mdp">Donnez un mot de passe</label>
+    <input type="password" name="mdp" placeholder="mot de passe" required>
+    <br>
+    <input type="checkbox" name="debutant" checked="checked"><label for="debutant">Je débute en PHP</label>
+    <br>
+    <input type="submit" name="btok" value="Envoyer">
+
+
+
+
+    </form>
+    <hr>
+    
+</body>
+</html>

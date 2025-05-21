@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire PHP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ico.png">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <hr>
+    <form action="traitement.php" method="POST">
+        
+        <select name="titre">
+            <option value="M">M.</option>
+            <option value="Mme" selected>Mme</option>
+            <option value="Mlle">Mlle</option>
+        </select><br><br>
+        
+        <label for="nom">Nom : </label>
+        <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required><br><br>
+        
+        <label for="prenom">Prénom : </label>
+        <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required><br><br>
+        
+        <label for="annee">Année de naissance : </label>
+        <input type="number" name="annee" id="annee" placeholder="1990" min="1900" max="2025"><br><br>
+        
+        <label for="identifiant">Identifiant : </label>
+        <input type="text" name="identifiant" id="identifiant" placeholder="Choisissez un identifiant" required><br><br>
+        
+        <label for="mdp">Mot de passe : </label>
+        <input type="password" name="mdp" id="mdp" placeholder="Choisissez un mot de passe" required><br><br>
+        
+        
+        <label>Sexe : </label>
+        <input type="radio" name="sexe" value="M" checked> Masculin
+        <input type="radio" name="sexe" value="F"> Féminin<br><br>
+        
+        <input type="checkbox" name="debutant" id="debutant" checked>
+        <label for="debutant">Je débute en PHP</label><br><br>
+        
+      
+        <input type="submit" name="submit" value="Envoyer">
+    </form>
+    <hr>
+</body>
+</html>

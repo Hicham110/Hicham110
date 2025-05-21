@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tp5 Ex1</title>
+</head>
+<body>
+  <h2>Saisir le premier nombre</h1>
+  <input type="number" id="nb1">
+
+  <h2>Saisir le deuxième nombre</h2>
+  <input type="number" id="nb2">
+
+  <br><br>
+  <button onclick="calcul()">Calculer</button>
+
+  <script>
+    function calcul() {
+      let x = parseFloat(document.getElementById("nb1").value);
+      let y = parseFloat(document.getElementById("nb2").value);
+
+      let A1 = x + y;
+      let A2 = x - y;
+      let A3= x / y;
+      let A4= x * y;
+
+      console.log(x + " + " + y + " = " + A1);
+      console.log(x + " - " + y + " = " + A2);
+      console.log(x + " / " + y + " = " + A3);
+      console.log(x + " * " + y + " = " + A4);
+    }
+  </script>
+</body>
+</html>
